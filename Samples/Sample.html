@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>NickScrollAnimation - Sample</title>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .sampleContainer {
+            width: 100%;
+            text-align: center;
+        }
+
+        .sampleContainer div {
+            padding-bottom: 20px;
+            padding-bottom: 130px;
+            font-size: 30px;
+        }
+    </style>
+
+    <!-- Line slider (must be in header otherwise animation will be visiable for a fraction of a secon when loading -->
+    <link rel="stylesheet" href="../Dist/jQuery.nickScrollAnimation.min.css">
+    <script src="../Dist/jQuery.nickScrollAnimation.min.js"></script>
+    <script type="text/javascript">
+        $(document).nickScrollAnimation({
+            StartDelay: 1500,
+            PercentageFromBottom:20,
+            DoOnLoadAnimations: true,
+            AnimationFields: new Array(
+                /*standard animations */
+                ["#BounceScale", nickScrollAnimationType.NA_BounceScale, 1],
+                ["#LargenScale", nickScrollAnimationType.NA_LargenScale, 1],
+                ["#SlideFromBottom", nickScrollAnimationType.NA_SlideFromBottom, 1],
+                ["#SlideFromRight", nickScrollAnimationType.NA_SlideFromRight, 1],
+                ["#SlideFromLeft", nickScrollAnimationType.NA_SlideFromLeft, 1],
+                /*incremental animations */
+                [".incrementalSlideSelector", nickScrollAnimationType.NA_SlideFromLeft, 1, null, null, 1.0],
+                [".incrementalBounceSelector", nickScrollAnimationType.NA_BounceScale, 1, null, null, 0.5],
+            )
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <div class="navbar-brand">NickScrollAnimation - Sample</div>
+                <div class="d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="https://docs.njhayward.com/NickScrollAnimation/">Docs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            <p>Scroll down to see the animation load as you scroll.</p>
+            <p>Standard animations</p>
+            <div class="sampleContainer">
+                <div id="BounceScale">
+                    BounceScale
+                </div>
+                <div id="LargenScale">
+                    LargenScale
+                </div>
+                <div id="SlideFromBottom">
+                    SlideFromBottom
+                </div>
+                <div id="SlideFromRight">
+                    SlideFromRight
+                </div>
+                <div id="SlideFromLeft">
+                    SlideFromLeft
+                </div>
+            </div>
+            <br />
+            <p>Incremental animations (refresh the page while here too see this better, good for menus)</p>
+            <div class="sampleContainer">
+                <div class="incrementalSlideSelector">
+                    SlideFromLeft1
+                </div>
+                <div class="incrementalSlideSelector">
+                    SlideFromLeft2
+                </div>
+                <div class="incrementalSlideSelector">
+                    SlideFromLeft3
+                </div>
+                <div class="incrementalSlideSelector">
+                    SlideFromLeft4
+                </div>
+                <div class="incrementalSlideSelector">
+                    SlideFromLeft5
+                </div>
+                <div class="incrementalBounceSelector">
+                    Bounce1
+                </div>
+                <div class="incrementalBounceSelector">
+                    Bounce2
+                </div>
+                <div class="incrementalBounceSelector">
+                    Bounce3
+                </div>
+                <div class="incrementalBounceSelector">
+                    Bounce4
+                </div>
+                <div class="incrementalBounceSelector">
+                    Bounce5
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            More information can be found in the <a class="text-dark" href="https://docs.njhayward.com/NickScrollAnimation/">docs</a>
+        </div>
+    </footer>
+</body>
+</html>

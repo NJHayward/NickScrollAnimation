@@ -1,0 +1,95 @@
+/* Scale Bounce keys */
+
+@keyframes bounceScale {
+    0% {
+        transform: scale(0.2);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    80% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Scale Largen keys */
+
+@keyframes largenScale {
+    0% {
+        transform: scale(0.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* SlideFromRightDelay */
+
+@keyframes SlideFromRightDelay {
+    0%, 50% {
+        visibility:hidden;
+        transform: translateX(+100%);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+/* SlideFromLeftDelay */
+
+@keyframes SlideFromLeftDelay {
+    0%, 50% {
+        visibility: hidden;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+/* SlideFromRight */
+
+@keyframes SlideFromRight {
+    0% {
+        transform: translateX(+200%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* SlideFromLeft */
+
+@keyframes SlideFromLeft {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* slideFromBottom */
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(+200%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
