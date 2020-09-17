@@ -95,8 +95,8 @@ AnimationFields: new Array(
 )
 
 ElementSelector :  the selector for the element  e.g  #myeleId or .myEleClass<br />
-NickScrollAnimationType : the animation effect wanted, see above section
-AnimationTime: length of time for the animation to perform
-MaxWidthToPerform: If set will only perform the animation when below this width.  good for alternate animations in mobile views
-MinWidthToPerform: If set will only perform the animation when above this width.  good for animations in non mobile views
+NickScrollAnimationType : the animation effect wanted, see above section<br />
+AnimationTime: length of time for the animation to perform<br />
+MaxWidthToPerform: If set will only perform the animation when below this width.  good for alternate animations in mobile views<br />
+MinWidthToPerform: If set will only perform the animation when above this width.  good for animations in non mobile views<br />
 IncrementAmount: used when selecting multiple elements with class selector.  Increase the animation time by this amount when animating each element.  good for a menu that seems to fold out one after the other.
