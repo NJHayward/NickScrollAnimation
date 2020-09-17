@@ -94,7 +94,7 @@ AnimationFields: new Array(
     [ElementSelector, NickScrollAnimationType, AnimationTime, MaxWidthToPerform, MinWidthToPerform, IncrementAmount]
 )
 
-ElementSelector :  the selector for the element  e.g  #myeleId or .myEleClass
+ElementSelector :  the selector for the element  e.g  #myeleId or .myEleClass<br />
 NickScrollAnimationType : the animation effect wanted, see above section
 AnimationTime: length of time for the animation to perform
 MaxWidthToPerform: If set will only perform the animation when below this width.  good for alternate animations in mobile views
